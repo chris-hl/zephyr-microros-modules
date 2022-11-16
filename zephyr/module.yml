@@ -1,0 +1,4 @@
+name: microros_meta
+build: 
+  cmake: zephyr
+  kconfig: zephyr/Kconfig

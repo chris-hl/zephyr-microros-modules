@@ -1,0 +1,87 @@
+manifest:
+  defaults:
+    remote: micro-ros
+
+  remotes:
+    - name: ros2
+      url-base: https://github.com/ros2
+    - name: micro-ros
+      url-base: https://github.com/micro-ROS
+    - name: eprosima
+      url-base: https://github.com/eprosima
+    - name: yashi
+      url-base: https://github.com/yashi
+
+  projects:
+    - name: ros2_tracing
+      remote: yashi #ros2
+      revision: zephyr-humble
+      path: modules/ros2/ros2_tracing
+
+    - name: rosidl
+      remote: yashi #ros2
+      revision: zephyr-humble
+      path: modules/ros2/rosidl
+
+    - name: rcutils
+      remote: yashi #micro-ros
+      revision: zephyr-humble
+      path: modules/microros/rcutils
+
+    - name: rmw
+      remote: yashi #ros2
+      revision: zephyr-humble
+      path: modules/ros2/rmw
+
+    - name: rcl_interfaces
+      remote: yashi #ros2
+      revision: zephyr-humble
+      path: modules/ros2/rcl_interfaces
+
+    - name: unique_identifier_msgs
+      remote: yashi #ros2
+      revision: zephyr-humble
+      path: modules/ros2/unique_identifier_msgs
+
+    - name: rcl
+      remote: yashi #micro-ros
+      revision: zephyr-humble
+      path: modules/microros/rcl
+
+    - name: rclc
+      remote: yashi #ros2
+      revision: zephyr-humble
+      path: modules/ros2/rclc
+
+    - name: micro-cdr
+      remote: yashi #eprosima
+      revision: zephyr-humble #ros2
+      path: modules/eprosima/micro-cdr
+
+    - name: microxrcedds-client
+      remote: yashi #eprosima
+      revision: zephyr-humble #ros2
+      path: modules/eprosima/microxrcedds-client
+
+    - name: rosidl_typesupport_microxrcedds
+      remote: yashi #micro-ros
+      revision: zephyr-humble
+      path: modules/microros/rosidl_typesupport_microxrcedds
+
+    - name: rmw_microxrcedds
+      remote: yashi #micro-ros
+      revision: zephyr-humble
+      path: modules/microros/rmw_microxrcedds
+
+    - name: common_interfaces
+      remote: yashi #ros2
+      revision: zephyr-humble
+      path: modules/ros2/common_interfaces
+
+    - name: rosidl_typesupport
+      remote: yashi #micro-ros
+      revision: zephyr-humble
+      path: modules/microros/rosidl_typesupport
+
+  self:
+    path: modules/microros_meta
