@@ -1,0 +1,5 @@
+function(add_submodule name)
+  set(SUBMODULE_SRC_DIR ${ZEPHYR_CURRENT_MODULE_DIR}/submodules/${name})
+  set(SUBMODULE_BIN_DIR ${CMAKE_CURRENT_BINARY_DIR}/submodules/${name})
+  add_subdirectory(cmake/${name} ${SUBMODULE_BIN_DIR})
+endfunction()

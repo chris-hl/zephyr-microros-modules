@@ -1,0 +1,71 @@
+set(TARGET std_msgs)
+set(non_idl_tuples
+  "${SUBMODULE_SRC_DIR}/${TARGET}:msg/Bool.msg"
+  "${SUBMODULE_SRC_DIR}/${TARGET}:msg/Byte.msg"
+  "${SUBMODULE_SRC_DIR}/${TARGET}:msg/ByteMultiArray.msg"
+  "${SUBMODULE_SRC_DIR}/${TARGET}:msg/Char.msg"
+  "${SUBMODULE_SRC_DIR}/${TARGET}:msg/ColorRGBA.msg"
+  "${SUBMODULE_SRC_DIR}/${TARGET}:msg/Empty.msg"
+  "${SUBMODULE_SRC_DIR}/${TARGET}:msg/Float32.msg"
+  "${SUBMODULE_SRC_DIR}/${TARGET}:msg/Float32MultiArray.msg"
+  "${SUBMODULE_SRC_DIR}/${TARGET}:msg/Float64.msg"
+  "${SUBMODULE_SRC_DIR}/${TARGET}:msg/Float64MultiArray.msg"
+  "${SUBMODULE_SRC_DIR}/${TARGET}:msg/Header.msg"
+  "${SUBMODULE_SRC_DIR}/${TARGET}:msg/Int16.msg"
+  "${SUBMODULE_SRC_DIR}/${TARGET}:msg/Int16MultiArray.msg"
+  "${SUBMODULE_SRC_DIR}/${TARGET}:msg/Int32.msg"
+  "${SUBMODULE_SRC_DIR}/${TARGET}:msg/Int32MultiArray.msg"
+  "${SUBMODULE_SRC_DIR}/${TARGET}:msg/Int64.msg"
+  "${SUBMODULE_SRC_DIR}/${TARGET}:msg/Int64MultiArray.msg"
+  "${SUBMODULE_SRC_DIR}/${TARGET}:msg/Int8.msg"
+  "${SUBMODULE_SRC_DIR}/${TARGET}:msg/Int8MultiArray.msg"
+  "${SUBMODULE_SRC_DIR}/${TARGET}:msg/MultiArrayDimension.msg"
+  "${SUBMODULE_SRC_DIR}/${TARGET}:msg/MultiArrayLayout.msg"
+  "${SUBMODULE_SRC_DIR}/${TARGET}:msg/String.msg"
+  "${SUBMODULE_SRC_DIR}/${TARGET}:msg/UInt16.msg"
+  "${SUBMODULE_SRC_DIR}/${TARGET}:msg/UInt16MultiArray.msg"
+  "${SUBMODULE_SRC_DIR}/${TARGET}:msg/UInt32.msg"
+  "${SUBMODULE_SRC_DIR}/${TARGET}:msg/UInt32MultiArray.msg"
+  "${SUBMODULE_SRC_DIR}/${TARGET}:msg/UInt64.msg"
+  "${SUBMODULE_SRC_DIR}/${TARGET}:msg/UInt64MultiArray.msg"
+  "${SUBMODULE_SRC_DIR}/${TARGET}:msg/UInt8.msg"
+  "${SUBMODULE_SRC_DIR}/${TARGET}:msg/UInt8MultiArray.msg"
+)
+set(output_files
+  ${SUBMODULE_BIN_DIR}/include/${TARGET}/msg/Bool.msg
+  ${SUBMODULE_BIN_DIR}/include/${TARGET}/msg/Byte.msg
+  ${SUBMODULE_BIN_DIR}/include/${TARGET}/msg/ByteMultiArray.msg
+  ${SUBMODULE_BIN_DIR}/include/${TARGET}/msg/Char.msg
+  ${SUBMODULE_BIN_DIR}/include/${TARGET}/msg/ColorRGBA.msg
+  ${SUBMODULE_BIN_DIR}/include/${TARGET}/msg/Empty.msg
+  ${SUBMODULE_BIN_DIR}/include/${TARGET}/msg/Float32.msg
+  ${SUBMODULE_BIN_DIR}/include/${TARGET}/msg/Float32MultiArray.msg
+  ${SUBMODULE_BIN_DIR}/include/${TARGET}/msg/Float64.msg
+  ${SUBMODULE_BIN_DIR}/include/${TARGET}/msg/Float64MultiArray.msg
+  ${SUBMODULE_BIN_DIR}/include/${TARGET}/msg/Header.msg
+  ${SUBMODULE_BIN_DIR}/include/${TARGET}/msg/Int16.msg
+  ${SUBMODULE_BIN_DIR}/include/${TARGET}/msg/Int16MultiArray.msg
+  ${SUBMODULE_BIN_DIR}/include/${TARGET}/msg/Int32.msg
+  ${SUBMODULE_BIN_DIR}/include/${TARGET}/msg/Int32MultiArray.msg
+  ${SUBMODULE_BIN_DIR}/include/${TARGET}/msg/Int64.msg
+  ${SUBMODULE_BIN_DIR}/include/${TARGET}/msg/Int64MultiArray.msg
+  ${SUBMODULE_BIN_DIR}/include/${TARGET}/msg/Int8.msg
+  ${SUBMODULE_BIN_DIR}/include/${TARGET}/msg/Int8MultiArray.msg
+  ${SUBMODULE_BIN_DIR}/include/${TARGET}/msg/MultiArrayDimension.msg
+  ${SUBMODULE_BIN_DIR}/include/${TARGET}/msg/MultiArrayLayout.msg
+  ${SUBMODULE_BIN_DIR}/include/${TARGET}/msg/String.msg
+  ${SUBMODULE_BIN_DIR}/include/${TARGET}/msg/UInt16.msg
+  ${SUBMODULE_BIN_DIR}/include/${TARGET}/msg/UInt16MultiArray.msg
+  ${SUBMODULE_BIN_DIR}/include/${TARGET}/msg/UInt32.msg
+  ${SUBMODULE_BIN_DIR}/include/${TARGET}/msg/UInt32MultiArray.msg
+  ${SUBMODULE_BIN_DIR}/include/${TARGET}/msg/UInt64.msg
+  ${SUBMODULE_BIN_DIR}/include/${TARGET}/msg/UInt64MultiArray.msg
+  ${SUBMODULE_BIN_DIR}/include/${TARGET}/msg/UInt8.msg
+  ${SUBMODULE_BIN_DIR}/include/${TARGET}/msg/UInt8MultiArray.msg
+)
+
+rosidl_gen_files(
+  TARGET ${TARGET}
+  NON_IDL_TUPLES ${non_idl_tuples}
+  OUTPUT_FILES ${output_files}
+)

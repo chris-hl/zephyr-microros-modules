@@ -1,0 +1,46 @@
+[submodule "submodules/ros2/ros2_tracing"]
+	path = submodules/ros2/ros2_tracing
+	url = https://github.com/ros2/ros2_tracing
+[submodule "submodules/ros2/rosidl"]
+	path = submodules/ros2/rosidl
+	url = https://github.com/ros2/rosidl
+[submodule "submodules/micro-ROS/rcutils"]
+	path = submodules/micro-ROS/rcutils
+	url = https://github.com/micro-ROS/rcutils
+[submodule "submodules/ros2/rmw"]
+	path = submodules/ros2/rmw
+	url = https://github.com/ros2/rmw
+[submodule "submodules/ros2/rcl_interfaces"]
+	path = submodules/ros2/rcl_interfaces
+	url = https://github.com/ros2/rcl_interfaces
+[submodule "submodules/ros2/unique_identifier_msgs"]
+	path = submodules/ros2/unique_identifier_msgs
+	url = https://github.com/ros2/unique_identifier_msgs
+[submodule "submodules/micro-ROS/rcl"]
+	path = submodules/micro-ROS/rcl
+	url = https://github.com/micro-ROS/rcl
+[submodule "submodules/eprosima/micro-cdr"]
+	path = submodules/eProsima/Micro-CDR
+	url = https://github.com/eprosima/micro-cdr
+[submodule "submodules/eprosima/Micro-XRCE-DDS-Client"]
+	path = submodules/eProsima/Micro-XRCE-DDS-Client
+	url = https://github.com/eprosima/Micro-XRCE-DDS-Client
+[submodule "submodules/micro-ROS/rosidl_typesupport_microxrcedds"]
+	path = submodules/micro-ROS/rosidl_typesupport_microxrcedds
+	url = https://github.com/micro-ROS/rosidl_typesupport_microxrcedds
+[submodule "submodules/micro-ROS/rmw_microxrcedds"]
+	path = submodules/micro-ROS/rmw_microxrcedds
+	url = https://github.com/micro-ROS/rmw_microxrcedds
+[submodule "submodules/ros2/common_interfaces"]
+	path = submodules/ros2/common_interfaces
+	url = https://github.com/ros2/common_interfaces
+[submodule "submodules/micro-ROS/rosidl_typesupport"]
+	path = submodules/micro-ROS/rosidl_typesupport
+	url = https://github.com/micro-ROS/rosidl_typesupport
+[submodule "submodules/yashi/rcutils"]
+	path = submodules/yashi/rcutils
+	url = https://github.com/yashi/rcutils
+[submodule "submodules/yashi/rclc"]
+	path = submodules/yashi/rclc
+	url = https://github.com/yashi/rclc.git
+	branch = zephyr-humble

@@ -2,23 +2,15 @@
 # SPDX-License-Identifier: Apache-2.0
 
 config MICROROS_META
-	bool "Enable all MicroROS modules"
-	imply ROS2_COMMON_INTERFACES
-	imply ROS2_RCLC
-	imply ROS2_RCL_INTERFACES
-	imply ROS2_RMW
-	imply ROS2_ROSIDL
-	imply ROS2_ROS2_TRACING
-	imply ROS2_UNIQUE_IDENTIFIER_MSGS
-	imply EPROSIMA_MICRO_CDR
-	imply EPROSIMA_MICRO_XRCE_DDS_CLIENT
-	imply MICROROS_RCL
-	imply MICROROS_RCUTILS
-	imply MICROROS_RMW_MICROXRCEDDS
-	imply MICROROS_ROSIDL_TYPESUPPORT
-	imply MICROROS_ROSIDL_TYPESUPPORT_MICROXRCEDDS_C
+	bool "Enable MicroROS support"
 	help
 	  Enable all MicroROS modules
-	  Individual modules can still be configured 'n'
 
-	  Does not select a specific EPROSIMA_MICRO_XRCE_DDS_CLIENT_type
+if MICROROS_META
+	config APP_LINK_WITH_MICROROS_META
+	bool "Link 'app' with MICROROS_META"
+	default y
+	help
+	  Add all required haeder files to the 'app' include path
+
+endif # MICROROS_META
