@@ -27,18 +27,14 @@ add_custom_command(OUTPUT ${LOGGING_MACROS_H}
   VERBATIM
 )
 
-zephyr_interface_library_named(ros2_rcutils)
+zephyr_library_named(ros2_rcutils)
 target_include_directories(
   ros2_rcutils
-  INTERFACE
+  PUBLIC
   ${SUBMODULE_SRC_DIR}/include
   ${SUBMODULE_BIN_DIR}/include
 )
-target_sources(ros2_rcutils INTERFACE ${LOGGING_MACROS_H})
 
-
-zephyr_library()
-zephyr_library_link_libraries(ros2_rcutils)
 zephyr_library_link_libraries_ifdef(CONFIG_POSIX_API posix_subsys)
 
 zephyr_library_sources(
@@ -69,7 +65,7 @@ zephyr_library_sources(
   ${SUBMODULE_SRC_DIR}/src/time_zephyr.c
   ${SUBMODULE_SRC_DIR}/src/uint8_array.c
   ${SUBMODULE_SRC_DIR}/src/atomic_64bits.c
-  #${LOGGING_MACROS_H}
+  ${LOGGING_MACROS_H}
 )
 
 zephyr_library_compile_definitions(_DEFAULT_SOURCE)
